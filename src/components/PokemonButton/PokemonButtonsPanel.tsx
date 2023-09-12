@@ -13,16 +13,16 @@ function PokemonButtonsPanel(props: PokemonButtonsPanelProps) {
   return (
     <div className="pokedex-buttons-panel">
       <Button
-        onClick={ () => filterPokemon('all') }
+        onClick={() => filterPokemon('all')}
         className="filter-button"
       >
         All
       </Button>
       {pokemonTypes.map((type) => (
         <Button
-          dataTestId={ `pokemon-type-button` }
-          key={ type }
-          onClick={ () => filterPokemon(type) }
+          dataTestId={`pokemon-type-button`}
+          key={type}
+          onClick={() => filterPokemon(type)}
           className="filter-button"
         >
           {`${type}`}
